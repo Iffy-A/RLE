@@ -1,0 +1,28 @@
+using System;
+
+namespace RLE {
+    class Program {
+
+        static void Main(string[] args) {
+            string file = System.IO.File.ReadAllText(@"filename.txt");
+            compRatio(file);
+            encode(fileOne);
+        }
+
+        public static void compRatio(string a) { //Function to take the string and print it out
+            Console.WriteLine("This is the first file: " + a + "\n" + "This is the second file: " + b);
+            Console.ReadKey();
+        }
+
+        public static void encode(string a) {
+            int count = 0;
+            string output;
+            for (int i = 0; i < a.Length; i++) {
+                if (a[i] == a[+1]) {
+                    count++;
+                } else {
+                    count = 0;
+                }
+                output = a[i] + count.ToString(); Console.Write(output);
+            }
+        }
